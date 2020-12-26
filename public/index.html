@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="signUp-logIn" class="signUp-logIn continer">
+        <form action="" class="login-form" id ='logIn'>
+            <h2>Log IN</h2>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="loginEmail">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="loginPassword">
+            <button type="submit">Log in</button>
+            <p>if ypuer not acount :</p><div id="signUpBut">SignUp</div>
+        </form>
+        <form class="signUp-form" id= "signUp">
+            <h2>Create Acount</h2>
+            <label for="userName">User Name</label>
+            <input type="text" name="userName" id="userName">
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+    
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+    
+            <label for="confirmPassword">Conferm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+    
+            <label for="typeOfUser">type Of User</label>
+            <select name="typeOfUser" id="typeOfUser" disabled="disabled">
+                <option value="Sellor">Sellor</option>
+                <option value="Buyer">Buyer</option>
+            </select>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+    
+</body>
+</html>

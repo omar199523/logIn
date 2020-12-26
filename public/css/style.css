@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+/* start header styling */
+/* end header styling */
+
+/* ************************* */
+
+/* start signUp-logIn styling */
+.signUp-logIn{
+    width: 500px;
+    padding: 15px;
+    display: flex;
+    height: 50vh;
+    margin: 20vh auto 0px ;
+    justify-content: space-between;
+}
+.signUp-logIn h2{
+    text-align: center;
+    font-size: 1.8em;
+}
+@media (max-width:767px){
+    .signUp-logIn{
+        width: 100%;
+    }
+}
+
+.login-form{
+    flex: 400px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login-form *{
+    padding: 10px;
+}
+.signUp-form{
+    flex: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.signUp-form *{
+    padding: 10px;
+}
+/* end signUp-logIn styling */
+
+/* ************************* */
+/* start global styling */
+
+/* end global styling */
+
+/* ************************* */
+/* start styling */
+/* end styling */
+
+/* ************************* */
