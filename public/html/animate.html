@@ -28,6 +28,15 @@
 
 
     </div>
-
+    <script>
+        const randomColor = ()=>{
+            return '#'+Math.floor(Math.random()*16777215).toString(16)
+        }
+        setInterval(()=>{
+            document.querySelectorAll('span').forEach(x=>{
+                x.style.borderColor = randomColor();
+            })
+        },1000)
+    </script>
 </body>
 </html>
