@@ -32,7 +32,6 @@ router.post('/signUp',(req,res)=>{
             bcrypt.hash(password,salt,(err,hash)=>{
                 if(err)console.log(err);
                 
-                
                 postUser({userName,email,password:hash,typeOfUser})
                 .then(()=>{
                     console.log('sucessful post user');
