@@ -1,23 +1,24 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 
 
-const dbBuild = require('../database/config/build');
+
 const getUers = require('../database/query/getusers');
 const validInpt = require('./validInput');
 const postUser = require('../database/query/postUser');
-
-dbBuild();
 
 
 
 router.post('/logIn',(req,res)=>{
     let {email,password} = req.body;
     validInpt({email,password},(err,value)=>{
-        if(err) console.log(err);
-        res.redirect('/');
-        console.log(value);
+        if(err) {
+            console.log(err);
+        }else{
+            res.redirect('/html/animate.html');
+        }
+        
     });
     
 });
