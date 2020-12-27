@@ -21,7 +21,7 @@ body{
 .loder span{
     position: absolute;
     display: block;
-    border: 5px solid #fff ;
+    border: 5px solid #fff;
     box-shadow: 0px 5px 0px #ccc,
                 inset 0px 5px 0px 3ccc;
     box-sizing: border-box;
